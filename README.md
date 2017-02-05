@@ -22,10 +22,10 @@ Finder::create()
 ->name('*.php')
 ```
 
-And wish to examine this in a debugger
+and I wish to examine this in a debugger.
 
 At present, the only way I'm aware of doing this in PHP<sup>[1](#myfootnote1)</sup>
- with xDebug is to tediously rewrite the code to 
+ with xDebug is either to step through it, or to tediously rewrite the code to 
  introduce intermediate variables, i.e. rewrite the above to
  ```
  $a = Finder::create()
