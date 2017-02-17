@@ -2,26 +2,45 @@
 
 if (!function_exists('debugBreak')) {
 
-    function debugBreak(&$arg)
+    /**
+     * Break to examine function argument
+     *
+     * @param $argument
+     *
+     * @return mixed
+     */
+    function debugBreak($argument)
     {
         if (function_exists('xdebug_break')) {
             xdebug_break();
         }
-        return $arg;
+
+        return $argument;
     }
 
 
 }
 
 if (!function_exists('debugBreakIf')) {
-    function debugBreakIf(&$arg, $if)
+
+    /**
+     * Break to examine function argument iff $if
+     *
+     * @param $argument
+     * @param $if
+     *
+     * @return mixed
+     */
+
+    function debugBreakIf($argument, $if)
     {
         if (value($if)) {
             if (function_exists('xdebug_break')) {
                 xdebug_break();
             }
         }
-        return $arg;
+
+        return $argument;
     }
 }
 
