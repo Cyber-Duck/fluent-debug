@@ -1,4 +1,7 @@
-#Fluent / Chaining Methods/ Functions xDebug Library
+# 🚨 Discontinued 🚨
+This package will no longer be supported.
+
+# Fluent / Chaining Methods/ Functions xDebug Library
 
 ##Why?
 
